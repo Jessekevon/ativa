@@ -1,6 +1,6 @@
-alert('Project created!');
+// alert('Project created!');
 // Set up an anonymous function that will run automatically.
 (function() {
 	var projectHtml = "<%= j render('show', :project => @project) %>";
-	$('.projects').append(projectHtml);
+	$('.projects').prepend(projectHtml);
 })();
